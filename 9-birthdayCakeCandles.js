@@ -30,20 +30,20 @@ function readLine() {
  */
 
 function birthdayCakeCandles(candles) {
-    let max = 0;
-    let velas = 0;
+    let maximo = 0;
+    let velinhas = 0;
     
     for(let i = 0; i < candles.length; i++){
-        if(candles[i] > max){
-            max = candles[i];
-            velas = 1;
+        if(candles[i] > maximo){
+            maximo = candles[i];
+            velinhas = 1;
         }else{
-            if(max === candles[i]){
-                velas = velas + 1;
+            if(maximo === candles[i]){
+                velinhas = velinhas + 1;
             }
         }
     }
-    return velas;
+    return velinhas;
 }
 
 function main() {
