@@ -27,8 +27,8 @@ function readLine() {
  */
 
 function plusMinus(arr) {
-    let positivo = 0;
-    let negativo = 0;
+    let mais = 0;
+    let menos = 0;
     let zero = 0;
     
     for(let i = 0; i < arr.length; i++){
@@ -37,16 +37,16 @@ function plusMinus(arr) {
         }
         else{
             if(arr[i] > 0){
-                positivo += 1;
+                mais += 1;
             }
             else{
-                negativo += 1;
+                menos += 1;
             }
         }
     }
     
-    console.log((positivo / arr.length) || 0);
-    console.log((negativo / arr.length) || 0);
+    console.log((mais / arr.length) || 0);
+    console.log((menos / arr.length) || 0);
     console.log((zero / arr.length) || 0);
 }
 
