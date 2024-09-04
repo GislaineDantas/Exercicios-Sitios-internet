@@ -29,18 +29,18 @@ function readLine() {
 function miniMaxSum(arr) {
     arr.sort();
 
-    let somaMin = 0;
-    let somaMax = 0;
+    let somaMinimo = 0;
+    let somaMaximo = 0;
 
     for(let i = 0; i < arr.length; i++){
         if(i < arr.length - 1) {
-            somaMin = somaMin + arr[i];
+            somaMinimo = somaMinimo + arr[i];
         } 
         if (i > 0) {
-            somaMax = somaMax + arr[i];
+            somaMaximo = somaMaximo + arr[i];
         }
     }
-    console.log(somaMin, somaMax) 
+    console.log(somaMinimo, somaMaximo) 
 }
 
 function main() {
